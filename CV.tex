@@ -96,30 +96,30 @@
   \begin{tikzpicture}[remember picture, overlay] 
     \node[anchor = north west] at ($(current page.north west)+(0.5cm,+1.0cm)$) {\includegraphics[height=6cm]{zju.png}};
   \end{tikzpicture}%
-\centerline{\LARGE\bfseries{胡豆}} 
+\centerline{\LARGE\bfseries{云发鹏}} 
 
-\centerline{\normalsize{\faPhone\ 111-1111-1111 \quad \faEnvelopeO\ \href{mailto:3230100000@zju.edu.cn}{3230100000@zju.edu.cn}}} 
+\centerline{\normalsize{\faPhone\ 111-1111-1111 \quad \faEnvelopeO\ \href{mailto:2253644@tongji.edu.cn}{2253644@tongji.edu.cn}}} 
 
-\centerline{\normalsize{\faGithubSquare\ \href{https://github.com/maksymilan}{https://github.com/maksymilan} \quad \faRssSquare\ \href{https://maksymilan.github.io/}{https://maksymilan.github.io}}} 
+\centerline{\normalsize{\faGithubSquare\ \href{https://github.com/FPYun}{https://github.com/FPYun} \quad \faRssSquare\ \href{https://github.com/FPYun}{https://github.com/FPYun}}} 
     
 \section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faGraduationCap}\ 教育背景}    
-\textbf{浙江大学} \hfill 2023.9 -- 至今\\[0.5em] % 标题和正文间加一点距离
-CC98烂坑挖掘工程与技术\quad 大二 
+\textbf{同济大学} \hfill 2022.9 -- 至今\\[0.5em] % 标题和正文间加一点距离
+微电子科学与工程\quad 大四 
 \begin{itemize}[nosep]
-    \item 相关课程：《烂坑挖掘及基础》、《高级挖坑技巧》、《烂坑数理统计》
+    \item 相关课程：《模拟电子技术》、《数字电子技术》、《嵌入式系统》
 \end{itemize}
 
 \section{\makebox[\widthof{\faUsers}][c]{\color{CVBlue}\faUsers}\ 项目经历}
 
 % --- 第一个项目 ---
 % 将标题行末尾的 \\ 替换为 \titlebreak 命令
-\textbf{98烂坑风控与可视化作战平台} \hfill 2024.08 -- 至今 \titlebreak
-项目描述：为维护cc98社区的讨论纯度、净化“心灵之约”版块风气，本项目旨在对“烂坑”进行科学、严谨的量化分析，并引入\textbf{大语言模型(LLM)}对烂坑帖进行\textbf{自动化情感极性与“离谱指数”标注}。
+\textbf{基于 FPGA 的三子棋人机博弈系统设计} \hfill 2024.08 -- 至今 \titlebreak
+项目描述：基于 Verilog 硬件描述语言，设计并实现了一款支持玩家与计算机自动对战的三子棋硬件逻辑电路。
 % 在 itemize 的选项中，使用 topsep=\intraProjectListTopSep 来控制上边距
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{数据与后端}：运用 \textbf{Go} 语言及 \textbf{GORM} 框架，实现对全站“烂坑”帖的7x24小时全天候\textbf{抓取}与\textbf{入库}(MySQL)。
-    \item \textbf{可视化前端}：采用原生 \textbf{HTML/CSS/JS} 构建了“烂坑”实时监控\textbf{作战大屏}。实现了坑主成分分析、挖坑热力图、年度烂坑王榜单等\textbf{可视化图表}，并通过 \textbf{AJAX} 异步刷新，确保数据洞察的实时性。
-    \item \textbf{核心产出}：全面掌握了从\textbf{数据采集、清洗、LLM标注到可视化分析}的“反烂坑”全链路技术。
+    \item \textbf{状态机(FSM)核心调度}：采用有限状态机(FSM)作为系统核心来控制游戏全局流转，独立设计了包含空闲等待(IDLE)、玩家落子(PLAYER_MOVE)、胜利检测(CHECK_WIN)、计算机自动落子(COMPUTER_MOVE)以及游戏结束(GAME_OVER)的完整状态转移路径，确保了人机交互的时序稳定性。
+    \item \textbf{底层寄存器与逻辑裁决}：构建3*3寄存器阵列(Board Register)，使用2-bit编码精准记录9个棋盘位置的空闲或占用状态。通过组合逻辑开发了裁决模块(Arbiter)与胜利检测逻辑(Win Check Logic)，实现了对行、列、对角线三连珠的胜负判定，并成功集成了防覆盖的非法移动拦截与死局平局判定功能。
+    \item \textbf{外设驱动与交互反馈}：设计LED驱动控制模块(LED Driver)将底层寄存器状态实时映射至物理层面的 LED 阵列。实现了玩家落子亮红灯、计算机落子亮绿灯的硬件级状态可视化。
 \end{itemize}
 
 % 使用 \projectsep 命令来分隔两个项目
