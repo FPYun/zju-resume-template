@@ -90,11 +90,11 @@
 
 %%%% 利用tikz来定位照片
 \begin{tikzpicture}[remember picture, overlay] 
-    \node[anchor = north east] at ($(current page.north east)+(-2cm,-1.2cm)$) {\includegraphics[height=3cm]{avatar.jpg}};
+    \node[anchor = north east] at ($(current page.north east)+(-2cm,-1.2cm)$) {\includegraphics[height=3cm]{CV.jpg}};
   \end{tikzpicture}%
   %%%% 利用tikz来定位学校Logo，这里只在第一页显示
   \begin{tikzpicture}[remember picture, overlay] 
-    \node[anchor = north west] at ($(current page.north west)+(0.5cm,+1.0cm)$) {\includegraphics[height=6cm]{zju.png}};
+    \node[anchor = north west] at ($(current page.north west)+(0.5cm,+1.0cm)$) {\includegraphics[height=6cm]{Tongji_Uni_logo.svg.png}};
   \end{tikzpicture}%
 \centerline{\LARGE\bfseries{云发鹏}} 
 
@@ -131,7 +131,7 @@
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
     \item \textbf{器件设计}：利用TENG，将尼龙球滚动转换为电信号，利用静电计采集数据。
     \item \textbf{信号处理：滤波处理以及多项式回归}：实现了信号的波形收集和特征值采集以及确定回归方程
-    \item \textbf{波浪能监测和预警}：结合机器学习算法，实现了波浪监测等功能。通过比较差值的方法，可以确定电压信号属于哪个拟函数。如果遇到差值相近无法判断，模型将采取平均值的方法给出答案。
+    \item \textbf{波浪能监测和预警}：结合机器学习算法，实现波浪监测和预警功能。
 \end{itemize}
 
 \section{\makebox[\widthof{\faCogs}][c]{\color{CVBlue}\faCogs}\ 技术栈}
