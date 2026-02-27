@@ -96,11 +96,11 @@
   \begin{tikzpicture}[remember picture, overlay] 
     \node[anchor = north west] at ($(current page.north west)+(0.5cm,+1.0cm)$) {\includegraphics[height=6cm]{zju.png}};
   \end{tikzpicture}%
-\centerline{\LARGE\bfseries{胡豆}} 
+\centerline{\LARGE\bfseries{云发鹏}} 
 
-\centerline{\normalsize{\faPhone\ 111-1111-1111 \quad \faEnvelopeO\ \href{mailto:3230100000@zju.edu.cn}{3230100000@zju.edu.cn}}} 
+\centerline{\normalsize{\faPhone\ 111-1111-1111 \quad \faEnvelopeO\ \href{mailto:2253644@tongji.edu.cn}{2253644@tongji.edu.cn}}} 
 
-\centerline{\normalsize{\faGithubSquare\ \href{https://github.com/maksymilan}{https://github.com/maksymilan} \quad \faRssSquare\ \href{https://maksymilan.github.io/}{https://maksymilan.github.io}}} 
+\centerline{\normalsize{\faGithubSquare\ \href{https://github.com/FPYun}{https://github.com/FPYun} \quad \faRssSquare\ \href{https://github.com/FPYun}{https://github.com/FPYun}}} 
     
 \section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faGraduationCap}\ 教育背景}    
 \textbf{同济大学} \hfill 2022.9 -- 至今\\[0.5em] % 标题和正文间加一点距离
@@ -113,13 +113,13 @@
 
 % --- 第一个项目 ---
 % 将标题行末尾的 \\ 替换为 \titlebreak 命令
-\textbf{基于 FPGA 的三子棋人机博弈系统设计 (数字前端逻辑设计)} \hfill 2024.08 -- 2024.011 \titlebreak
+\textbf{基于 FPGA 的三子棋人机博弈系统设计 (数字前端逻辑设计)} \hfill 2024.08 -- 2024.11 \titlebreak
 项目描述：基于 Verilog 硬件描述语言，设计并实现了一款支持玩家与计算机自动对战的三子棋硬件逻辑电路 。
 % 在 itemize 的选项中，使用 topsep=\intraProjectListTopSep 来控制上边距
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
     \item \textbf{状态机(FSM)核心调度}：采用有限状态机（FSM）作为系统核心来控制游戏全局流转 。独立设计了包含空闲等待（IDLE）、玩家落子（PLAYER\_MOVE）、胜利检测（CHECK\_WIN）、计算机自动落子（COMPUTER\_MOVE）以及游戏结束（GAME\_OVER）的完整状态转移路径，确保了人机交互的时序稳定性 。
-    \item \textbf{底层寄存器与逻辑裁决}：构建 3x3 寄存器阵列（Board Register），使用 2-bit 编码精准记录 9 个棋盘位置的空闲或占用状态 。通过组合逻辑开发了裁决模块（Arbiter）与胜利检测逻辑（Win Check Logic），实现了对行、列、对角线三连珠的胜负判定 ，并成功集成了防覆盖的非法移动拦截与死局平局判定功能 。
-    \item \textbf{外设驱动与交互反馈}：设计 LED 驱动控制模块（LED Driver），将底层寄存器状态实时映射至物理层面的 LED 阵列 。实现了玩家落子亮红灯、计算机落子亮绿灯的硬件级状态可视化 。
+    \item \textbf{底层寄存器与逻辑裁决}：构建 3x3 寄存器阵列（Board Register）使用2-bit编码精准记录9个棋盘位置的空闲或占用状态。通过组合逻辑开发了裁决模块（Arbiter）与胜利检测逻辑（Win Check Logic），实现了对行、列、对角线三连珠的胜负判定 ，并成功集成了防覆盖的非法移动拦截与死局平局判定功能 。
+    \item \textbf{外设驱动与交互反馈}：设计LED驱动控制模块（LED Driver），将底层寄存器状态实时映射至物理层面的 LED 阵列。实现了玩家落子亮红灯、计算机落子亮绿灯的硬件级状态可视化。
 \end{itemize}
 
 % 使用 \projectsep 命令来分隔两个项目
@@ -136,22 +136,18 @@
 
 \section{\makebox[\widthof{\faCogs}][c]{\color{CVBlue}\faCogs}\ 技术栈}
 \begin{itemize}[nosep]
-    \item \textbf{编程语言：} Python, C++
-    \item \textbf{开发工具：} Vivado,立创EDA,Cadence，LaTex，Keil
-    \item \textbf{操作系统：} Linux
+    \item \textbf{编程语言：} Python, C++，Verilog
+    \item \textbf{开发工具：} Vivado，立创EDA，Cadence，LaTex，Keil
 \end{itemize}
 \section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faList}\ 获奖情况}
 \begin{itemize}
     \item 全国大学生嵌入式芯片与系统设计竞赛决赛二等奖 \hfill 2024.12
-    \item 同济大学大学生创新实践训练计划 \hfill 2024.4
-    \item 2024美国大学生数学建模竞赛S奖 \hfill 2024.5
-    \item 上海市学运会赛艇男子八单第四名 \hfill 2024.11
-    \item 同济大学招生宣讲“优秀团队” \hfill 2023.4
+    \item 同济大学大学生创新实践训练计划 \hfill 2024.4 \item 2024美国大学生数学建模竞赛S奖 \hfill 2024.5
+    \item 同济大学招生宣讲“优秀团队” \hfill 2023.4    \item 上海市学运会赛艇男子八单第四名 \hfill 2024.11
 \end{itemize}
     
 \section{\makebox[\widthof{\faInfo}][c]{\color{CVBlue}\faInfo}\ 其他}
 \begin{itemize}[parsep=0.5ex]
-    \item \textbf{技术博客：} \href{https://github.com/FPYun}{https://github.com/FPYun}
     \item \textbf{英语水平：} CET-4, CET-6
     \item \textbf{其他证书：} 驾照、普通话二乙 
 \end{itemize}
