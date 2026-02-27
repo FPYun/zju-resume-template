@@ -117,7 +117,7 @@
 项目描述：基于 Verilog 硬件描述语言，设计并实现了一款支持玩家与计算机自动对战的三子棋硬件逻辑电路 。
 % 在 itemize 的选项中，使用 topsep=\intraProjectListTopSep 来控制上边距
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{状态机(FSM)核心调度}：采用有限状态机（FSM）作为系统核心来控制游戏全局流转 。独立设计了包含空闲等待（IDLE）、玩家落子（PLAYER\_MOVE）、胜利检测（CHECK\_WIN）、计算机自动落子（COMPUTER\_MOVE）以及游戏结束（GAME_OVER）的完整状态转移路径，确保了人机交互的时序稳定性 。
+    \item \textbf{状态机(FSM)核心调度}：采用有限状态机（FSM）作为系统核心来控制游戏全局流转 。独立设计了包含空闲等待（IDLE）、玩家落子（PLAYER\_MOVE）、胜利检测（CHECK\_WIN）、计算机自动落子（COMPUTER\_MOVE）以及游戏结束（GAME\_OVER）的完整状态转移路径，确保了人机交互的时序稳定性 。
     \item \textbf{底层寄存器与逻辑裁决}：构建 3x3 寄存器阵列（Board Register），使用 2-bit 编码精准记录 9 个棋盘位置的空闲或占用状态 。通过组合逻辑开发了裁决模块（Arbiter）与胜利检测逻辑（Win Check Logic），实现了对行、列、对角线三连珠的胜负判定 ，并成功集成了防覆盖的非法移动拦截与死局平局判定功能 。
     \item \textbf{外设驱动与交互反馈}：设计 LED 驱动控制模块（LED Driver），将底层寄存器状态实时映射至物理层面的 LED 阵列 。实现了玩家落子亮红灯、计算机落子亮绿灯的硬件级状态可视化 。
 \end{itemize}
