@@ -118,7 +118,7 @@
 % 在 itemize 的选项中，使用 topsep=\intraProjectListTopSep 来控制上边距
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
     \item \textbf{状态机(FSM)核心调度}：采用有限状态机（FSM）作为系统核心来控制游戏全局流转 。独立设计了包含空闲等待（IDLE）、玩家落子（PLAYER\_MOVE）、胜利检测（CHECK\_WIN）、计算机自动落子（COMPUTER\_MOVE）以及游戏结束（GAME\_OVER）的完整状态转移路径，确保了人机交互的时序稳定性 。
-    \item \textbf{底层寄存器与逻辑裁决}：构建 3x3 寄存器阵列（Board Register）使用2-bit编码精准记录9个棋盘位置的空闲或占用状态。通过组合逻辑开发了裁决模块（Arbiter）与胜利检测逻辑（Win Check Logic），实现了对行、列、对角线三连珠的胜负判定 ，并成功集成了防覆盖的非法移动拦截与死局平局判定功能 。
+    \item \textbf{底层寄存器与逻辑裁决}：构建3x3寄存器阵列(Board Register)使用2-bit编码精准记录9个棋盘位置的空闲或占用状态。通过组合逻辑进行胜负判定，并成功集成了防覆盖的非法移动拦截与死局平局判定功能。
     \item \textbf{外设驱动与交互反馈}：设计LED驱动控制模块（LED Driver），将底层寄存器状态实时映射至物理层面的 LED 阵列。实现了玩家落子亮红灯、计算机落子亮绿灯的硬件级状态可视化。
 \end{itemize}
 
@@ -127,7 +127,7 @@
 
 % --- 第二个项目 ---
 \textbf{机器学习用于自供电波浪水文监测与预警系统} \hfill 2023.3 -- 2024.4 \titlebreak
-项目描述：为探索心灵版规的边界，以及测试版主锁沉反应速度的极限，本项目基于\textbf{多智能体协作(MCP)与LLM}技术，开发了一款能\textbf{自主“挖坑”与“互坑”}的AI Agent。
+项目描述：借助TENG摩擦纳米发电，自供电进行对波浪水文的监测与预警。
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
     \item \textbf{器件设计}：利用TENG，将尼龙球滚动转换为电信号，利用静电计采集数据。
     \item \textbf{信号处理：滤波处理以及多项式回归}：实现了信号的波形收集和特征值采集以及确定回归方程
