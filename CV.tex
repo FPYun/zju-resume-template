@@ -113,8 +113,8 @@
 
 % --- 第一个项目 ---
 % 将标题行末尾的 \\ 替换为 \titlebreak 命令
-\textbf{基于 FPGA 的三子棋人机博弈系统设计 (数字前端逻辑设计)} \hfill 2025.08 -- 2025.12 \titlebreak
-项目描述：基于 Verilog 硬件描述语言，设计并实现了一款支持玩家与计算机自动对战的三子棋硬件逻辑电路 。
+\textbf{基于FPGA的三子棋人机博弈系统设计} \hfill 2025.08 -- 2025.12 \titlebreak
+项目描述：独立设计并实现了一款集成了人机交互、胜负裁决与自动对弈功能的片上系统。采用自顶向下的模块化设计思想，包含按键消抖、核心控制状态机、棋局逻辑运算及LED显示驱动四大模块。
 % 在 itemize 的选项中，使用 topsep=\intraProjectListTopSep 来控制上边距
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
     \item \textbf{状态机(FSM)核心调度}：采用有限状态机（FSM）作为系统核心来控制游戏全局流转 。独立设计了包含空闲等待（IDLE）、玩家落子（PLAYER\_MOVE）、胜利检测（CHECK\_WIN）、计算机自动落子（COMPUTER\_MOVE）以及游戏结束（GAME\_OVER）的完整状态转移路径，确保了人机交互的时序稳定性 。
