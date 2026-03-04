@@ -106,7 +106,7 @@
 \textbf{同济大学} \hfill 2022.9 -- 2026.6\\[0.5em] % 标题和正文间加一点距离
 微电子科学与工程\quad 本科 
 \begin{itemize}[nosep]
-    \item 相关课程：数字电子技术、模拟电子技术、半导体物理、数据结构、嵌入式系统、电磁场与电磁波、集成系统芯片设计原理
+    \item 相关课程：数字电子技术、模拟电子技术、半导体物理、嵌入式系统、电磁场与电磁波、集成系统芯片设计
 \end{itemize}
 
 \section{\makebox[\widthof{\faUsers}][c]{\color{CVBlue}\faUsers}\ 项目经历}
@@ -117,9 +117,9 @@
 项目描述：独立设计并实现了一款集成了人机交互、胜负裁决与自动对弈功能的片上系统。采用自顶向下的模块化设计思想，包含按键消抖、核心控制状态机、棋局逻辑运算及LED显示驱动四大模块。
 % 在 itemize 的选项中，使用 topsep=\intraProjectListTopSep 来控制上边距
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{状态机(FSM)核心调度}：采用有限状态机（FSM）作为系统核心来控制游戏全局流转 。独立设计了包含空闲等待（IDLE）、玩家落子（PLAYER\_MOVE）、胜利检测（CHECK\_WIN）、计算机自动落子（COMPUTER\_MOVE）以及游戏结束（GAME\_OVER）的完整状态转移路径，确保了人机交互的时序稳定性 。
+    \item \textbf{状态机(FSM)核心调度}：采用有限状态机（FSM）作为系统核心来控制游戏全局流转。独立设计了包含IDLE、PLAYER\_MOVE、CHECK\_WIN、COMPUTER\_MOVE、GAME\_OVER的完整状态转移路径，确保了人机交互的时序稳定性。
     \item \textbf{底层寄存器与逻辑裁决}：构建3x3寄存器阵列(Board Register)使用2-bit编码精准记录9个棋盘位置的空闲或占用状态。通过组合逻辑进行胜负判定，并成功集成了防覆盖的非法移动拦截与死局平局判定功能。
-    \item \textbf{外设驱动与交互反馈}：设计LED驱动控制模块（LED Driver），将底层寄存器状态实时映射至物理层面的 LED 阵列。实现了玩家落子亮红灯、计算机落子亮绿灯的硬件级状态可视化。
+    \item \textbf{外设驱动与交互反馈}：设计LED驱动控制模块，将底层寄存器状态实时映射至物理层面的 LED 阵列。实现了玩家落子亮红灯、计算机落子亮绿灯的硬件级状态可视化。
 \end{itemize}
 
 % 使用 \projectsep 命令来分隔两个项目
@@ -129,9 +129,9 @@
 \textbf{基于HFSS的5.2GHz高增益微带八木天线设计与仿真} \hfill 2025.09 -- 2025.12 \titlebreak
 项目描述：针对WLAN及毫米波应用背景，独立设计并仿真了一款平面化微带八木阵列天线。
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{仿真建模}：使用ANSYS HFSS建立全波电磁模型，选用低损耗Rogers RT/duroid 5880基板，设计包含驱动单元、反射器及两组引向器的七单元阵列结构。
-    \item \textbf{阻抗匹配}：设计四分之一波长阻抗变换器，成功将高输入阻抗匹配至50Ω馈线，并优化线宽以抑制寄生辐射。
-    \item \textbf{项目成果}：最终实现中心频率5.2GHz，增益达10.9dBi（优于目标10.7dBi），前后比(F/B)达16dB，相对带宽约10%(4.9-5.4GHz)。
+    \item \textbf{仿真建模}：使用ANSYS HFSS建立全波电磁模型,选用低损耗Rogers5880基板,设计包含驱动单元、反射器及两组引向器的七单元阵列结构。
+    \item \textbf{阻抗匹配}：设计四分之一波长阻抗变换器,成功将高输入阻抗匹配至50Ω馈线,并优化线宽以抑制寄生辐射。
+    \item \textbf{项目成果}：最终实现中心频率5.2GHz,增益达10.9dBi(优于目标10.7dBi),前后比(F/B)达16dB,相对带宽约10%。
 \end{itemize}
 
 \section{\makebox[\widthof{\faCogs}][c]{\color{CVBlue}\faCogs}\ 技术栈}
@@ -150,7 +150,7 @@
     
 \section{\makebox[\widthof{\faInfo}][c]{\color{CVBlue}\faInfo}\ 其他}
 \begin{itemize}[parsep=0.5ex]
-    \item \textbf{英语水平：} CET-4, CET-6
-    \item \textbf{其他：} 驾照、普通话二乙
+    \item \textbf{其他：} CET-4, CET-6、驾照、普通话二乙
+    \item \textbf{实习：} 特变电工股份有限公司 (TBEA) | 数智化部实习生
 \end{itemize}
 \end{document}
